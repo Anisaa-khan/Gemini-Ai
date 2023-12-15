@@ -1,38 +1,258 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
 }
+.nav{
+  position: fixed;
+   background-color:rgba(0, 0, 0, 0.3) ; 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  height: 4.4rem;
   display: flex;
-  flex-direction: column;
+}
+.navbar {
+display: inline-flex;
+  gap: 4rem;
+  margin-left:700px ;
+  margin-top: 15px;
+  list-style: none;
+}
+.nav-list {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border: 2px solid transparent;
+  transition: left 0.3s;
+}
+.nav-list:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+.logo{
+  color: #faf5ff;
+  font-weight: 500;
+  text-transform: uppercase;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+  font-size: 30px;
+  margin-left: 100px;
+  letter-spacing: 4px;
+}
+.hero{
+  
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://sanctuary.ai/media/qxydyazh/evolution-robotics-1160-x-680-v3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+.data{
+
+ width: 60%;
+padding-top: 250px;
+margin-left: 45px;
+}
+.data h1{
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 600;
+  font-size: 52px;
+}
+.data p{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.herosection{
+  height: 55vh;
+  background-color: #000000;
+}
+#data{
+  margin-top: 54px;
+  color: white;
+}
+#data h1{
+font-weight: 600;
+font-size: 48px;
+}
+#data p{
+  font-size: 20px;
+  margin-top: 20px;
+  color: #5d5a63;
+}
+.sec-img{
+margin-top: 10px;
+margin-left: 80px;
+width: 430px;
+height: 380px;
+border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-section{
+  background-color: #161616;
+}
+.btn{
+  padding: 10px 30px ;
+  background-color: #5d5a63;
+  border: 1px solid #5d5a63;
+  border-radius: 0px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* 2nd section----------------------- */
+.hero-data{
+  width:500px;
+  height:600px;
+text-align: center;
+}
+.hero-img{
+  width: 400px ;
+  height: 380px;
+  border-radius: 50%;
+}
+.hero-data h3{
+  margin-top: 25px;
+font-family: 'poppins';
+font-weight: 600;
+line-height: 30px;
+color: white;
+}
+.hero-data p{
+  padding: 10px;
+  font-family: 'poppins';
+  font-weight: 500;
+  color:#5d5a55 ;
+  font-size: 18px;
+  
+
+}
+.hero-section2{
+  width: 100%;
+  background-color: black;
+}
+.data2{
+  width: 85%;
+  margin: auto;
+}
+.data2-img{
+  width: 630px;
+  height: 350px;
+  border: 1px solid black;
+}
+
+#data2{
+  padding-left: 40px;
+  margin-top: 100px;
+  color: white;
+}
+#data2 h1{
+font-weight: 600;
+font-size: 48px;
+}
+#data2 p{
+  font-size: 18px;
+  margin-top: 20px;
+  color: #5d5a63;
+  letter-spacing: -1pxpx;
+}
+
+/* Footer---------- */
+.footer{
+  background-color: black;
+
+}
+.footer-data{
+  padding:30px 0px;
+  text-align: center;
+  color: white;
+}
+/* about us----------------------- */
+.aboutus{
+  width: 86%;
+  margin: auto;
+}
+.about-data{
+  width:400px;
+  height:600px;
+text-align: center;
+}
+.about-img{
+  width: 370px ;
+  height: 350px;
+  border-radius: 50%;
+}
+.about-data h4{
+  margin-top: 30px;
+  color: #E2E2E2;
+}
+.about-data p{
+  padding-top: 10px;
+  font-family: 'poppins';
+  font-weight: 500;
+  color:#5d5a55 ;
+  font-size: 16px;
+}
+.aboutus2{
+  width: 86%;
+  margin: auto;
+}
+/* -----------------blog ------------------ */
+.blog{
+  width: 86%;
+  margin: auto;
+  
+  
+}
+.blog-box{
+  margin-top: 80px;
+  margin: auto;
+  width: 45%;
+  height: 60%;
+  background-color: white;
+}
+.blog-box:hover{
+  box-shadow: 0 4px 10px  white;
+}
+.blog-img{
+  width: 588px;
+  height: 290px;
+}
+.blog-data{
+width: 500px;
+margin-left: 20px;
+padding: 50px 0px;
+}
+.blog-box p{
+color: #5d5a63;
+}
+.blog-box h3{
+font-size: 20px;
+font-family:'roboto', sans-serif;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+/* contact us page------------------------- */
+.contact{
+  width: 86%;
+  margin: auto;
+  height: 70vh; 
+  color: #e2e2e2;
+}
+.contact-data{
+  width: 64%;
+  margin: auto;
+  margin-top: 90px;
+  text-align: center;
 }
